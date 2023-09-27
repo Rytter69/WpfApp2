@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.CustomizePizza"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Customize Pizza" Height="550" Width="450">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Bestem selv Pizza" FontWeight="Bold" FontSize="18" Margin="0,0,0,20"/>
+
+            <TextBlock Text=" Pizza bund + tomat og ost koster 50 kr, ingredienser koster 5kr pr:" FontWeight="Bold" Margin="0,0,0,10"/>
+            <StackPanel x:Name="ToppingsPanel">
+                <CheckBox Content="Pepperoni" x:Name="PepperoniCheckbox" Margin="0,0,0,5"/>
+                <CheckBox Content="Champion" x:Name="MushroomsCheckbox" Margin="0,0,0,5"/>
+                <CheckBox Content="Løg" x:Name="OnionsCheckbox" Margin="0,0,0,5"/>
+                <CheckBox Content="Peber" x:Name="GreenPeppersCheckbox" Margin="0,0,0,5"/>
+                <CheckBox Content="Bacon" x:Name="Bacon" Margin="0,0,0,5"/>
+                <CheckBox Content="Salat" x:Name="Salat" Margin="0,0,0,5"/>
+                <CheckBox Content="Skinke" x:Name="Skinke" Margin="0,0,0,5"/>
+                <CheckBox Content="Oksefars" x:Name="Oksefars" Margin="0,0,0,5"/>
+                <CheckBox Content="Kebab" x:Name="Kebab" Margin="0,0,0,5"/>
+                <CheckBox Content="Kødsauce" x:Name="kødsauce" Margin="0,0,0,5"/>
+            </StackPanel>
+
+            <TextBlock Text="Skriv hvis du har flere informationer:" FontWeight="Bold" Margin="0,15,0,5"/>
+            <TextBox x:Name="InstructionsTextBox" Height="100" VerticalScrollBarVisibility="Auto"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button Content="Confirm" Click="ConfirmButton_Click" Width="100" Margin="10"/>
+                <Button Content="Cancel" Click="CancelButton_Click" Width="100" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

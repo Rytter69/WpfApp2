@@ -49,13 +49,21 @@ namespace WpfApp2
                 TotalPrice += pizzaPrice;
             }
 
-            Bestiling.Text = string.Join(", ", OrderedPizzas);
+            Bestiling.Text += string.Join(", ", OrderedPizzas);
         }
 
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
             Bestiling.Clear();
             Pizza.SelectedItems.Clear();
+
+            CustomizedPrice = 0;
+
+            CustomizedPizza = null;
+
+            OrderedPizzas = null;
+
+            TotalPrice = 0;
         }
 
          
